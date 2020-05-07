@@ -1,6 +1,6 @@
 ---
 name: power.on
-pack: digital-loggers
+pack: digitalloggers
 runner_type: "python-script"
 description: Turn on an outlet.
 enabled: true
