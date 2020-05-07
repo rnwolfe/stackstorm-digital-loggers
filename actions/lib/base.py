@@ -10,7 +10,7 @@ class DLBaseAction(Action):
     def __init__(self, config):
         """ init method, run at class creation
         """
-        super(PdBaseAction, self).__init__(config)
+        super(DLBaseAction, self).__init__(config)
         self.logger.debug('Instantiating DLBaseAction()')
         self.dl = self._init_client()
 
