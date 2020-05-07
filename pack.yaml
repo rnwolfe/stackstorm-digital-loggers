@@ -8,7 +8,6 @@ keywords:
 version: 1.0.0
 python_versions:
   - "3"
-
 dependencies:
   - core
 author: Ryan Wolfe
