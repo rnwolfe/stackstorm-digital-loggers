@@ -24,5 +24,6 @@ class DLBaseAction(Action):
         if switch.verify():
             return switch
         else:
-            self.logger.error(f"Failed to connect to switch {self.config.['hostname']}")
+            self.logger.error(
+                f"Failed to connect to switch {self.config['hostname']}")
             exit(1)
