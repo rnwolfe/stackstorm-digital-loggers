@@ -13,4 +13,4 @@ password:
   description: "Password for web switch"
   type: "string"
   secret: true
-  require: true
+  required: true
