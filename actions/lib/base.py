@@ -21,4 +21,8 @@ class DLBaseAction(Action):
         switch = PowerSwitch(
             hostname=self.config['hostname'], userid=self.config['username'], password=self.config['password'])
 
-        return switch
+        if switch.verify():
+            return switch
+        else:
+            self.logger.error(f'Failed to connect to switch {self.config.['hostname']}')
+            exit(1)
