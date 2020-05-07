@@ -18,6 +18,7 @@ class DLBaseAction(Action):
         """ init_client method, run at class creation
         """
         self.logger.debug('Initializing dlipower client')
-        switch = PowerSwitch(hostname=self.config['hostname'], userid=self.config['username'], password=self.config['password']
+        switch = PowerSwitch(
+            hostname=self.config['hostname'], userid=self.config['username'], password=self.config['password'])
 
         return switch
