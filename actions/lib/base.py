@@ -12,7 +12,7 @@ class DLBaseAction(Action):
         """
         super(DLBaseAction, self).__init__(config)
         self.logger.debug('Instantiating DLBaseAction()')
-        self.dl = self._init_client()
+        self.switch = self._init_client()
 
     def _init_client(self):
         """ init_client method, run at class creation

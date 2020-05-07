@@ -15,7 +15,7 @@ class DLAction(DLBaseAction):
 
         if not outlet and not state:
             # If no parameters given, return status of outlets
-            return (True, self.dl.switch.statuslist())
+            return (True, self.switch.statuslist())
 
         if outlet and (int(outlet) or outlet.isnumeric()):
             # Adjust outlet number for starting at index 0
@@ -27,12 +27,12 @@ class DLAction(DLBaseAction):
         if state == 'on':  # POWER ON
             self.logger.debug(f'Powering on {relay}')
             if int(relay):
-                return (True, self.dl.switch[relay].on())
+                return (True, self.switch[relay].on())
             else:
-                return (True, [outlet.on() for outlet in self.dl.switch])
+                return (True, [outlet.on() for outlet in self.switch])
         if state == 'off':  # POWER ON
             self.logger.debug(f'Powering off {relay}')
             if int(relay):
-                return (True, self.dl.switch[relay].off())
+                return (True, self.switch[relay].off())
             else:
-                return (True, [outlet.off() for outlet in self.dl.switch])
+                return (True, [outlet.off() for outlet in self.switch])
