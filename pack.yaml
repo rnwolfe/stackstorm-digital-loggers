@@ -7,7 +7,6 @@ keywords:
   - power
 version: 1.0.0
 python_versions:
-  - "2"
   - "3"
 
 dependencies:
