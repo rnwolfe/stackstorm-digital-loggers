@@ -1,0 +1,16 @@
+---
+hostname:
+  description: "Digital Loggers Web Switch FQDN"
+  type: "string"
+  secret: false
+  required: true
+username:
+  description: "Username for web switch"
+  type: "string"
+  secret: true
+  required: true
+password:
+  description: "Password for web switch"
+  type: "string"
+  secret: true
+  require: true

@@ -1,0 +1,16 @@
+---
+name: power.on
+pack: digital-loggers
+runner_type: "python-script"
+description: Turn on an outlet.
+enabled: true
+entry_point: power.py
+parameters:
+  outlet:
+    type: string
+    description: The outlet you want to power on
+  state:
+    type: string
+    description: The state you want to turn the outlet to ('on' or 'off')
+    default: "off"
+    required: true

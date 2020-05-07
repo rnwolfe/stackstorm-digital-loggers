@@ -1,0 +1,16 @@
+---
+ref: digital-loggers
+name: Digital Loggers
+description: Simple actions and sensors for a Digital Loggers web power switch.
+keywords:
+  - digital-loggers
+  - power
+version: 1.0.0
+python_versions:
+  - "2"
+  - "3"
+
+dependencies:
+  - core
+author: Ryan Wolfe
+email: rn.wolfe@gmail.com
