@@ -1,5 +1,5 @@
 ---
-ref: digital-loggers
+ref: digital_loggers
 name: Digital Loggers
 description: Simple actions and sensors for a Digital Loggers web power switch.
 keywords:
