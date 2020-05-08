@@ -20,10 +20,11 @@ class DLBaseAction(Action):
         self.logger.debug('Initializing dlipower client')
         switch = PowerSwitch(
             hostname=self.config['hostname'], userid=self.config['username'], password=self.config['password'])
-
-        if switch.verify():
+        
+        if switch.statuslist():
+            self.logger.debug('Successfully connected to DL Switch')
             return switch
         else:
             self.logger.error(
-                f"Failed to connect to switch {self.config['hostname']}")
+                f"Failed to connect to power switch {self.config['hostname']}")
             exit(1)
